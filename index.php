@@ -24,15 +24,15 @@ function wpdocs_register_my_custom_menu_page()
         __( 'Custom Menu Plugin', 'textdomain' ),
         'Custom Form',
         'manage_options',
-        'custompage',
-        'customdata',
+        'custompagenew',
+        'customdata_new',
         'dashicons-admin-page',
         6
     ); 
 }
 add_action( 'admin_menu', 'wpdocs_register_my_custom_menu_page' );
 
-function customdata()
+function customdata_new()
 {
 ?>
 	<div class="wrap">
