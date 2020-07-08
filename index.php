@@ -1,10 +1,10 @@
 <?php
 /*
-PLugin Name: git plugin update now
+PLugin Name: Github Custom Plugin Update
 Plugin URI: http://www.webmyne.com/
-Description: git plugin update now update now button display in Wp-admin Plugin Panel
-Version: 6.0
-Author: Webmyne
+Description: Github Custom Plugin Update
+version: 6.0
+author: Webmyne
 Author URI: http://www.webmyne.com/
 */
 
