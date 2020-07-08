@@ -10,7 +10,7 @@ Author URI: http://www.webmyne.com/
 
 /* Start code at Update Plugin */
 
-require_once( 'BFIGitHubPluginUploader.php' );
+include_once( 'BFIGitHubPluginUploader.php' );
 if ( is_admin() )
 {
     new BFIGitHubPluginUpdater( __FILE__, 'rahulwebmyne', "newpluginupdate" );
