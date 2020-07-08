@@ -10,7 +10,7 @@ class BFIGitHubPluginUpdater {
     private $githubAPIResult; // holds data from GitHub
     private $accessToken; // GitHub private repo token
 
-    function __construct( $pluginFile, $gitHubUsername, $gitHubProjectName, $accessToken = 'd1010761e21fb15047f3b3fcf78e2a2ad46c79f3' ) {
+    function __construct( $pluginFile, $gitHubUsername, $gitHubProjectName, $accessToken = '' ) {
         add_filter( "pre_set_site_transient_update_plugins", array( $this, "setTransitent" ) );
         add_filter( "plugins_api", array( $this, "setPluginInfo" ), 10, 3 );
         add_filter( "upgrader_post_install", array( $this, "postInstall" ), 10, 3 );
