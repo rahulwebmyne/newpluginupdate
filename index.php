@@ -1,21 +1,20 @@
 <?php
 /*
-PLugin Name: Custom PLugin Create
+PLugin Name: git plugin update now
 Plugin URI: http://www.webmyne.com/
-Description: Custom plugin Create
-Version: 3.0
+Description: git plugin update now update now button display in Wp-admin Plugin Panel
+Version: 6.0
 Author: Webmyne
 Author URI: http://www.webmyne.com/
 */
 
 /* Start code at Update Plugin */
 
-include_once('plugin-update-checker/plugin-update-checker.php');
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'http://ws-srv-php72.in.webmyne.com/ORGANICFARM/wp-content/plugins/custom-plugin-create/plugin-update-checker/examples/plugin.json',
-	__FILE__, //Full path to the main plugin file or functions.php.
-	'custompage'
-);
+require_once( 'BFIGitHubPluginUploader.php' );
+if ( is_admin() )
+{
+    new BFIGitHubPluginUpdater( __FILE__, 'rahulwebmyne', "newpluginupdate" );
+}
 
 /* End code at Update Plugin */
 
