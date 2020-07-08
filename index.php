@@ -3,7 +3,7 @@
 PLugin Name: git plugin update now
 Plugin URI: http://www.webmyne.com/
 Description: git plugin update now update now button display in Wp-admin Plugin Panel
-Version: 6.0
+Version: 9.0
 Author: Webmyne
 Author URI: http://www.webmyne.com/
 */
@@ -45,7 +45,7 @@ function customdata()
 			$dbpwd = get_option('oscimp_dbpwd');
 			$prod_img_folder = get_option('oscimp_prod_img_folder');
 			$store_url = get_option('oscimp_store_url');
-			$updateverson="3.0";
+			$updateverson="9.0";
 		?>
 		 
 		<form name="oscimp_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
