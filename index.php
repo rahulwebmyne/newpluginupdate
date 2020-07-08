@@ -3,7 +3,7 @@
 PLugin Name: git plugin update now
 Plugin URI: http://www.webmyne.com/
 Description: git plugin update now update now button display in Wp-admin Plugin Panel
-Version: 9.0
+Version: 6.0
 Author: Webmyne
 Author URI: http://www.webmyne.com/
 */
